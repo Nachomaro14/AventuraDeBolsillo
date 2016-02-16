@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">AventuraDeBolsillo</string>
+    <string name="app_name">Aventura de Bolsillo</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="nuevoJugador">Nuevo jugador</string>
+    <string name="guerrero">Guerrero</string>
+    <string name="mago">Mago</string>
+    <string name="picaro">Pícaro</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
 </resources>

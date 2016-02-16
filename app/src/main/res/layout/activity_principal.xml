@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:id="@+id/btnCombatir"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/combatir"
+        android:backgroundTint="#ff3333" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEquipo"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/equipo"
+        android:backgroundTint="#733bbb" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInventario"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/inventario"
+        android:backgroundTint="#00d861" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTienda"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/tienda"
+        android:backgroundTint="#fbd500" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnPosada"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/posada"
+        android:backgroundTint="#723500" />
+</LinearLayout>
