@@ -41,4 +41,9 @@ public class PrincipalActivity extends Activity{
         Intent intent = new Intent(this, EquipoActivity.class);
         startActivity(intent);
     }
+
+    public void accederCombate(View view){
+        Intent intent = new Intent(this, CombateActivity.class);
+        startActivity(intent);
+    }
 }

@@ -3,10 +3,10 @@ package dam.aventuradebolsillo;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class EquipoActivity extends Activity {
+public class InventarioActivity extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_equipo);
+        setContentView(R.layout.activity_inventario);
     }
 }

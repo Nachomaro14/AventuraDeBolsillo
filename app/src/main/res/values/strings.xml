@@ -21,4 +21,7 @@
     <string name="defensa">Defensa:</string>
     <string name="arma">Arma</string>
     <string name="armadura">Armadura</string>
+
+    <string name="vida">Vida:</string>
+    <string name="versus">VS</string>
 </resources>

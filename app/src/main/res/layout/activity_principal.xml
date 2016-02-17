@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:weightSum="5"
-    android:background="#ffffff">
+    android:background="@drawable/fondoPrincipal">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnCombatir"
-
+            android:onClick="accederCombate"
             android:background="@drawable/combatir"
             android:backgroundTint="#ff3333"/>
     </LinearLayout>
@@ -34,7 +34,7 @@
             android:id="@+id/btnEquipo"
             android:onClick="accederEquipo"
             android:background="@drawable/equipo"
-            android:backgroundTint="#733bbb"/>
+            android:backgroundTint="#6da7ff"/>
     </LinearLayout>
 
     <LinearLayout

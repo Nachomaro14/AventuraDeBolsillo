@@ -28,6 +28,18 @@
             android:screenOrientation="portrait"
             android:name=".EquipoActivity">
         </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".CombateActivity">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".InventarioActivity">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".TiendaActivity">
+        </activity>
     </application>
 
 </manifest>
