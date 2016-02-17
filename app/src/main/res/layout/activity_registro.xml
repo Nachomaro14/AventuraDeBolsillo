@@ -30,7 +30,8 @@
             android:text="@string/guerrero"
             android:id="@+id/checkGuerrero"
             android:layout_gravity="center_vertical"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="#000000" />
 
     </LinearLayout>
 
@@ -52,7 +53,8 @@
             android:text="@string/mago"
             android:id="@+id/checkMago"
             android:layout_gravity="center_vertical"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="#000000" />
 
     </LinearLayout>
 
@@ -75,7 +77,8 @@
             android:text="@string/picaro"
             android:id="@+id/checkPicaro"
             android:layout_gravity="center_vertical"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="#000000" />
 
     </LinearLayout>
 
@@ -84,26 +87,30 @@
         android:layout_height="wrap_content"
         android:text="@string/usuario"
         android:id="@+id/textView3"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="#000000" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtNuevoUsuario"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/contraseña"
         android:id="@+id/textView5"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="#000000" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtNuevaContraseña"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="#000000" />
 
     <Button
         android:layout_width="wrap_content"
