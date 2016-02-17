@@ -14,9 +14,11 @@
 
     <string name="nombre">Nombre:</string>
     <string name="nivel">Nivel:</string>
+    <string name="experiencia">Experiencia:</string>
     <string name="oro">Oro:</string>
     <string name="ataque">Ataque:</string>
     <string name="energia">Energía:</string>
+    <string name="defensa">Defensa:</string>
     <string name="arma">Arma</string>
     <string name="armadura">Armadura</string>
 </resources>
