@@ -123,55 +123,68 @@
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/arma"
-        android:id="@+id/textView16"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp" />
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:layout_gravity="center_horizontal" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/armadura"
-        android:id="@+id/textView17"
-        android:layout_gravity="center_horizontal" />
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner2"
-        android:layout_gravity="center_horizontal" />
-
-    <GridLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView6"
-            android:layout_row="8"
-            android:layout_column="2"
-            android:layout_gravity="left|bottom" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="192dp"
+            android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView7"
-            android:layout_row="8"
-            android:layout_column="23"
-            android:layout_gravity="bottom" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/arma"
+                android:id="@+id/textView16"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp" />
 
-    </GridLayout>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView6"
+                android:layout_row="8"
+                android:layout_column="2"
+                android:layout_gravity="left|bottom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="192dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/armadura"
+                android:id="@+id/textView17"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView7"
+                android:layout_row="8"
+                android:layout_column="23"
+                android:layout_gravity="bottom|right" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
