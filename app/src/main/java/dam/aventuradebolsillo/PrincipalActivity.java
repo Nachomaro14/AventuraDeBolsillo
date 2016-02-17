@@ -12,7 +12,6 @@ import android.widget.LinearLayout;
 public class PrincipalActivity extends Activity{
     ImageButton btnCombatir, btnEquipo, btnInventario, btnTienda, btnPosada;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
