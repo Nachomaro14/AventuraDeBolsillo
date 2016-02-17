@@ -67,8 +67,8 @@
             android:onClick="accederPrincipal"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="117dp"
+            android:layout_height="113dp"
             android:id="@+id/btnRegistro"
             android:layout_row="32"
             android:layout_column="20"

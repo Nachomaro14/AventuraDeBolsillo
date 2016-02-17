@@ -5,7 +5,7 @@
 
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="108dp"
+        android:layout_height="102dp"
         android:id="@+id/btnCombatir"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/combatir"
@@ -13,7 +13,7 @@
 
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="102dp"
         android:id="@+id/btnEquipo"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/equipo"
@@ -21,7 +21,7 @@
 
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="102dp"
         android:id="@+id/btnInventario"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/inventario"
@@ -29,7 +29,7 @@
 
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="102dp"
         android:id="@+id/btnTienda"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/tienda"
@@ -37,7 +37,7 @@
 
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="102dp"
         android:id="@+id/btnPosada"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/posada"
