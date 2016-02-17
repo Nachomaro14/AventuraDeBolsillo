@@ -36,4 +36,9 @@ public class PrincipalActivity extends Activity{
         btnTienda.setLayoutParams(new LinearLayout.LayoutParams(width, alto));
         btnPosada.setLayoutParams(new LinearLayout.LayoutParams(width, alto));
     }
+
+    public void accederEquipo(View view){
+        Intent intent = new Intent(this, EquipoActivity.class);
+        startActivity(intent);
+    }
 }

@@ -3,10 +3,20 @@
     <string name="usuario">Usuario</string>
     <string name="contraseña">Contraseña</string>
     <string name="iniciarSesion">Iniciar sesión</string>
+
     <string name="nuevoJugador">Nuevo jugador</string>
     <string name="guerrero">Guerrero</string>
     <string name="mago">Mago</string>
     <string name="picaro">Pícaro</string>
+
     <string name="aceptar">Aceptar</string>
     <string name="cancelar">Cancelar</string>
+
+    <string name="nombre">Nombre:</string>
+    <string name="nivel">Nivel:</string>
+    <string name="oro">Oro:</string>
+    <string name="ataque">Ataque:</string>
+    <string name="energia">Energía:</string>
+    <string name="arma">Arma</string>
+    <string name="armadura">Armadura</string>
 </resources>
