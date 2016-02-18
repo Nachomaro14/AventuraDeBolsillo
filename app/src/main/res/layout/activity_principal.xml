@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnInventario"
-
+            android:onClick="accederInventario"
             android:background="@drawable/inventario"
             android:backgroundTint="#00d861"/>
     </LinearLayout>
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnTienda"
-
+            android:onClick="accederTienda"
             android:background="@drawable/tienda"
             android:backgroundTint="#fbd500"/>
     </LinearLayout>

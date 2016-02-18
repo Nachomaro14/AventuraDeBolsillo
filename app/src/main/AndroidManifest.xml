@@ -40,6 +40,14 @@
             android:screenOrientation="portrait"
             android:name=".TiendaActivity">
         </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ComprarActivity">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".VenderActivity">
+        </activity>
     </application>
 
 </manifest>

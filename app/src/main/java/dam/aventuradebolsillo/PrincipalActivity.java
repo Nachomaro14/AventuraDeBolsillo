@@ -37,13 +37,23 @@ public class PrincipalActivity extends Activity{
         btnPosada.setLayoutParams(new LinearLayout.LayoutParams(width, alto));
     }
 
+    public void accederCombate(View view){
+        Intent intent = new Intent(this, CombateActivity.class);
+        startActivity(intent);
+    }
+
     public void accederEquipo(View view){
         Intent intent = new Intent(this, EquipoActivity.class);
         startActivity(intent);
     }
 
-    public void accederCombate(View view){
-        Intent intent = new Intent(this, CombateActivity.class);
+    public void accederInventario(View view){
+        Intent intent = new Intent(this, InventarioActivity.class);
+        startActivity(intent);
+    }
+
+    public void accederTienda(View view){
+        Intent intent = new Intent(this, TiendaActivity.class);
         startActivity(intent);
     }
 }
