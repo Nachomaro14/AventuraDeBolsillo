@@ -7,6 +7,6 @@ public class InventarioActivity extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inventario);
+        setContentView(R.layout.a);
     }
 }

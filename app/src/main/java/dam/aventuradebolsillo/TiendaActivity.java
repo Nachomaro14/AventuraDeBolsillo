@@ -7,6 +7,6 @@ public class TiendaActivity extends Activity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tienda);
+        setContentView(R.layout.activity_inventario);
     }
 }
