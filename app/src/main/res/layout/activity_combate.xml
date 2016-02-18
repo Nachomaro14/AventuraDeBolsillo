@@ -156,33 +156,23 @@
                 android:backgroundTint="#458ff9" />
         </LinearLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/imageView12"
-                android:background="@drawable/mochila"
-                android:layout_margin="20dp"
-                android:backgroundTint="#060606" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/imageView13"
                 android:background="@drawable/escapar"
-                android:layout_margin="20dp"
-                android:backgroundTint="#ffd500" />
-        </LinearLayout>
+                android:backgroundTint="#ffd500"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
     </LinearLayout>
 
 </RelativeLayout>
