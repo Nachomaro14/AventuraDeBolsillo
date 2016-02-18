@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="@drawable/fondoregistro">
 
     <TextView
         android:layout_width="wrap_content"
@@ -10,7 +10,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/nuevoJugador"
         android:id="@+id/textView4"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:textSize="25dp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -18,8 +19,8 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
             android:id="@+id/imageView"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/guerrero" />
@@ -31,7 +32,8 @@
             android:id="@+id/checkGuerrero"
             android:layout_gravity="center_vertical"
             android:checked="false"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textSize="20dp" />
 
     </LinearLayout>
 
@@ -42,8 +44,8 @@
         android:weightSum="1">
 
         <ImageView
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
             android:id="@+id/imageView2"
             android:background="@drawable/mago" />
 
@@ -54,7 +56,8 @@
             android:id="@+id/checkMago"
             android:layout_gravity="center_vertical"
             android:checked="false"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textSize="20dp" />
 
     </LinearLayout>
 
@@ -65,8 +68,8 @@
         android:weightSum="1">
 
         <ImageView
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
             android:id="@+id/imageView3"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/picaro" />
@@ -78,7 +81,8 @@
             android:id="@+id/checkPicaro"
             android:layout_gravity="center_vertical"
             android:checked="false"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textSize="20dp" />
 
     </LinearLayout>
 
