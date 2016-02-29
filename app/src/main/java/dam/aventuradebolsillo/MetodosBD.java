@@ -21,11 +21,11 @@ public class MetodosBD {
 
     public boolean insertarNuevoUsuario(String usuario, String contraseña, String clase){
         if(clase.equals("Guerrero")){
-            httppost = new HttpPost("AQUÍ DEBEMOS INTRODUCIR LA URL DEL PHP DE 'insertarNuevoGuerrero' QUE ESTÁ EN EL SERVIDOR"); //Ejemplo: "http://192.168.0.11/picarcodigo/insert.php"
+            httppost = new HttpPost("http://aventuradebolsillo.esy.es/php/insertarNuevoGuerrero.php");
         }else if(clase.equals("Mago")){
-            httppost = new HttpPost("AQUÍ DEBEMOS INTRODUCIR LA URL DEL PHP DE 'insertarNuevoMago' QUE ESTÁ EN EL SERVIDOR"); //Ejemplo: "http://192.168.0.11/picarcodigo/insert.php"
+            httppost = new HttpPost("http://aventuradebolsillo.esy.es/php/insertarNuevoMago.php");
         }else{
-            httppost = new HttpPost("AQUÍ DEBEMOS INTRODUCIR LA URL DEL PHP DE 'insertarNuevoPicaro' QUE ESTÁ EN EL SERVIDOR"); //Ejemplo: "http://192.168.0.11/picarcodigo/insert.php"
+            httppost = new HttpPost("http://aventuradebolsillo.esy.es/php/insertarNuevoPicaro.php");
         }
         //A partir de aquí comenzamos a recoger los datos
         nameValuePairs = new ArrayList<NameValuePair>(3);
