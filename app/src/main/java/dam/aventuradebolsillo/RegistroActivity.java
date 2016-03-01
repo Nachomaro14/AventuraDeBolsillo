@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.apache.http.NameValuePair;
@@ -26,7 +29,7 @@ import java.util.List;
 public class RegistroActivity extends Activity{
 
     ImageButton registrar;
-    CheckBox guerrero, mago, picaro;
+    RadioButton guerrero, mago, picaro;
     EditText usuario, contrasena;
     HttpClient httpclient = new DefaultHttpClient();
     List<NameValuePair> nameValuePairs;
@@ -38,9 +41,9 @@ public class RegistroActivity extends Activity{
         setContentView(R.layout.activity_registro);
 
         registrar = (ImageButton) findViewById(R.id.btnNuevoUsuario);
-        guerrero = (CheckBox) findViewById(R.id.checkGuerrero);
-        mago = (CheckBox) findViewById(R.id.checkMago);
-        picaro = (CheckBox) findViewById(R.id.checkPicaro);
+        guerrero = (RadioButton) findViewById(R.id.checkGuerrero);
+        mago = (RadioButton) findViewById(R.id.checkMago);
+        picaro = (RadioButton) findViewById(R.id.checkPicaro);
 
         usuario = (EditText) findViewById(R.id.txtNuevoUsuario);
         contrasena = (EditText) findViewById(R.id.txtNuevaContraseña);

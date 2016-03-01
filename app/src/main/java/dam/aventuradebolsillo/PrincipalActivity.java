@@ -12,6 +12,8 @@ import android.widget.LinearLayout;
 public class PrincipalActivity extends Activity{
     ImageButton btnCombatir, btnEquipo, btnInventario, btnTienda, btnPosada;
 
+    String usuario;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
@@ -21,6 +23,12 @@ public class PrincipalActivity extends Activity{
         btnInventario = (ImageButton) findViewById(R.id.btnInventario);
         btnTienda = (ImageButton) findViewById(R.id.btnTienda);
         btnPosada = (ImageButton) findViewById(R.id.btnPosada);
+
+        if(getIntent().getExtras() != null){
+            Bundle b = getIntent().getExtras();
+            String u = b.getString("Usuario");
+            usuario = u;
+        }
 
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
@@ -44,6 +52,9 @@ public class PrincipalActivity extends Activity{
 
     public void accederEquipo(View view){
         Intent intent = new Intent(this, EquipoActivity.class);
+        Bundle b = new Bundle();
+        b.putString("Usuario", usuario);
+        intent.putExtras(b);
         startActivity(intent);
     }
 
