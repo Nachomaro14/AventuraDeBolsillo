@@ -69,11 +69,11 @@ public class RegistroActivity extends Activity{
         }
         if(!u.equals("") && !p.equals("") && !c.equals("")){
             if(c.equals("Guerrero")){
-                httppost = new HttpPost("http://aventuradebolsillo.esy.es/insertarNuevoGuerrero.php");
+                httppost = new HttpPost("http://aventuradebolsillo.esy.es/insertarNuevoGuerrero.php");//PV: 10, PE: 4, Ataque: 8
             }else if(c.equals("Mago")){
-                httppost = new HttpPost("http://aventuradebolsillo.esy.es/insertarNuevoMago.php");
+                httppost = new HttpPost("http://aventuradebolsillo.esy.es/insertarNuevoMago.php");//PV: 5, PE: 5, Ataque: 13
             }else{
-                httppost = new HttpPost("http://aventuradebolsillo.esy.es/insertarNuevoPicaro.php");
+                httppost = new HttpPost("http://aventuradebolsillo.esy.es/insertarNuevoPicaro.php");//PV: 7, PE: 4, Ataque: 11
             }
 
             nameValuePairs = new ArrayList<NameValuePair>(3);

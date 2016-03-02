@@ -24,7 +24,7 @@ public class Enemigo {
         this.nivel = nivelJugador;
         this.exp = obtenerExp(nivelJugador);
         this.daño = 2 * nivelJugador;
-        this.armadura = 2 + nivelJugador;
+        this.armadura = 3 + nivelJugador;
         this.oro = obtenerOro(nivelJugador);
 
 

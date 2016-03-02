@@ -117,11 +117,17 @@ public class PrincipalActivity extends Activity{
 
     public void accederInventario(View view){
         Intent intent = new Intent(this, InventarioActivity.class);
+        Bundle b = new Bundle();
+        b.putString("Usuario", usuario);
+        intent.putExtras(b);
         startActivity(intent);
     }
 
     public void accederTienda(View view){
         Intent intent = new Intent(this, TiendaActivity.class);
+        Bundle b = new Bundle();
+        b.putString("Usuario", usuario);
+        intent.putExtras(b);
         startActivity(intent);
     }
 

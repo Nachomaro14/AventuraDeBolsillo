@@ -127,7 +127,7 @@ public class CombateActivity extends Activity{
             //TURNO Jugador
             int turnoJugador = (int) (Math.random() * 4 + 1);
             if(turnoJugador < 4){
-                int daño = (ataque * 2) - ene.getArmadura();
+                int daño = (ataque * 2 - ene.getArmadura());
                 int vidaEnemigo =  Integer.parseInt(vidaE.getText().toString()) - daño;
 
                 if(vidaEnemigo <= 0 ){
@@ -209,7 +209,25 @@ public class CombateActivity extends Activity{
         }else{
             nivel = nivel - 1;
             experiencia = expMax/2;
+
+            if(clase.equals("Guerrero")){
+                ataque = 8 * nivel;
+                vidaMaxima = 10 * nivel;
+                energiaMaxima = 4 + nivel;
+                expMax = expMax * nivel;
+            }else if(clase.equals("Mago")){
+                ataque = 13 * nivel;
+                vidaMaxima = 5 * nivel;
+                energiaMaxima = 5 + nivel;
+                expMax = expMax * nivel;
+            }else{
+                ataque = 11 * nivel;
+                vidaMaxima = 7 * nivel;
+                energiaMaxima = 4 + nivel;
+                expMax = expMax * nivel;
+            }
             resetearParam();
+
         }
 
     }
@@ -218,7 +236,26 @@ public class CombateActivity extends Activity{
         experiencia = 0;
         experiencia = experiencia + expExtra;
 
+        if(clase.equals("Guerrero")){
+            ataque = 8 * nivel;
+            vidaMaxima = 10 * nivel;
+            energiaMaxima = 4 + nivel;
+            expMax = expMax * nivel;
+        }else if(clase.equals("Mago")){
+            ataque = 13 * nivel;
+            vidaMaxima = 5 * nivel;
+            energiaMaxima = 5 + nivel;
+            expMax = expMax * nivel;
+        }else{
+            ataque = 11 * nivel;
+            vidaMaxima = 7 * nivel;
+            energiaMaxima = 4 + nivel;
+            expMax = expMax * nivel;
+        }
+
         resetearParam();
+
+
     }
     public void resetearParam(){
         vidaJ.setText("" + vidaMaxima);
@@ -401,7 +438,7 @@ public class CombateActivity extends Activity{
 
     public boolean up() {
         httppost = new HttpPost("http://aventuradebolsillo.esy.es/actualizarInfoUsuario.php");
-        nameValuePairs = new ArrayList<NameValuePair>(1);
+        nameValuePairs = new ArrayList<NameValuePair>(10);
         nameValuePairs.add(new BasicNameValuePair("usuario", usuario));
         nameValuePairs.add(new BasicNameValuePair("experiencia", "" + experiencia));
         nameValuePairs.add(new BasicNameValuePair("expMax", "" + expMax));
@@ -441,14 +478,7 @@ public class CombateActivity extends Activity{
                 ctx.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ctx, "BD actualizada", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }else{
-                ctx.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(ctx, "BD no actualizada", Toast.LENGTH_SHORT).show();
+
                     }
                 });
             }
