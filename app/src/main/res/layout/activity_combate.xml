@@ -15,24 +15,52 @@
         <ImageView
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:id="@+id/imageView8" />
+            android:id="@+id/imagenEnemigo" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/vida"
-            android:id="@+id/textView23"
-            android:layout_margin="5dp"
-            android:textColor="#ffffff"
-            android:textSize="22dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView22"
-            android:layout_margin="5dp"
-            android:textColor="#ffffff"
-            android:textSize="22dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/nombreEnemigo"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vida"
+                    android:id="@+id/textView18"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView19"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -107,7 +135,7 @@
         <ImageView
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:id="@+id/imageView9" />
+            android:id="@+id/imagenJugador" />
 
     </LinearLayout>
 
@@ -134,10 +162,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal">
 
-            <ImageView
+            <ImageButton
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/imageView10"
+                android:id="@+id/btnAtacar"
                 android:background="@drawable/atacar"
                 android:layout_margin="20dp"
                 android:backgroundTint="#d30303" />
@@ -147,10 +175,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/imageView11"
+                android:id="@+id/btnEspecial"
                 android:background="@drawable/especial"
                 android:layout_margin="20dp"
                 android:backgroundTint="#458ff9" />
@@ -162,10 +190,10 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal">
 
-            <ImageView
+            <ImageButton
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/imageView13"
+                android:id="@+id/btnHuir"
                 android:background="@drawable/escapar"
                 android:backgroundTint="#ffd500"
                 android:layout_marginLeft="20dp"

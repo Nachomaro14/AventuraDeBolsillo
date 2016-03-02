@@ -101,6 +101,9 @@ public class PrincipalActivity extends Activity{
 
     public void accederCombate(View view){
         Intent intent = new Intent(this, CombateActivity.class);
+        Bundle b = new Bundle();
+        b.putString("Usuario", usuario);
+        intent.putExtras(b);
         startActivity(intent);
     }
 
