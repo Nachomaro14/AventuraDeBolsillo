@@ -28,7 +28,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class CombateActivity extends Activity{
 
@@ -142,7 +141,7 @@ public class CombateActivity extends Activity{
                 turnoEnemigo();
             }
         }else{
-            Toast.makeText(ctx, "No tienes suficiente energía", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, "No tienes suficiente energía", Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -155,7 +154,7 @@ public class CombateActivity extends Activity{
             new Actualizacion(CombateActivity.this).execute();
             super.onBackPressed();
         }else{
-            Toast.makeText(ctx, "No es tu día de suerte", Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx, "No es tu día de suerte", Toast.LENGTH_SHORT).show();
             turnoEnemigo();
         }
     }
@@ -374,7 +373,7 @@ public class CombateActivity extends Activity{
                 ctx.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ctx, "Credenciales inválidas", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ctx, "Credenciales inválidas", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -442,14 +441,14 @@ public class CombateActivity extends Activity{
                 ctx.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ctx, "BD actualizada", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ctx, "BD actualizada", Toast.LENGTH_SHORT).show();
                     }
                 });
             }else{
                 ctx.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ctx, "BD no actualizada", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ctx, "BD no actualizada", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

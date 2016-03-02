@@ -197,7 +197,7 @@ public class PrincipalActivity extends Activity{
                 ctx.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ctx, "No tienes oro suficiente", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ctx, "No tienes oro suficiente", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -257,7 +257,7 @@ public class PrincipalActivity extends Activity{
                     @Override
                     public void run() {
                         try {
-                            Toast.makeText(ctx, "¡Gracias!\n¡Vuelva pronto!\n(Tu vida y energía han sido restablecidas)", Toast.LENGTH_LONG).show();
+                            Toast.makeText(ctx, "¡Gracias!\n¡Vuelva pronto!\n(Tu vida y energía han sido restablecidas)", Toast.LENGTH_SHORT).show();
                         }catch (Exception e){
                             e.printStackTrace();
                         }

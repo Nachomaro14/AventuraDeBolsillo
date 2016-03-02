@@ -3,7 +3,6 @@ package dam.aventuradebolsillo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -15,10 +14,8 @@ import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
@@ -31,7 +28,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class InicioActivity extends Activity {
 
@@ -40,7 +36,6 @@ public class InicioActivity extends Activity {
     HttpClient httpclient = new DefaultHttpClient();
     ArrayList<NameValuePair> nameValuePairs;
     HttpPost httppost;
-    Activity ctx = this;
     String passLog = "";
 
     @Override
@@ -127,7 +122,7 @@ public class InicioActivity extends Activity {
                 ctx.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ctx, "Conectado como " + u, Toast.LENGTH_LONG).show();
+                        Toast.makeText(ctx, "Conectado como " + u, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(ctx, PrincipalActivity.class);
                         Bundle b = new Bundle();
                         b.putString("Usuario", u);
@@ -139,7 +134,7 @@ public class InicioActivity extends Activity {
                 ctx.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ctx, "Credenciales inválidas", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ctx, "Credenciales inválidas", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

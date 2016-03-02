@@ -1,12 +1,10 @@
 package dam.aventuradebolsillo;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -138,13 +136,6 @@ public class EquipoActivity extends Activity {
                         }else if (info.get(1).toString().equals("Picaro")){
                             imagen.setImageResource(R.drawable.picaro);
                         }
-                    }
-                });
-            }else{
-                ctx.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(ctx, "Credenciales inválidas", Toast.LENGTH_LONG).show();
                     }
                 });
             }
