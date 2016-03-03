@@ -10,7 +10,8 @@
         android:id="@+id/listView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/linearLayout4" />
+        android:layout_above="@+id/linearLayout4"
+        android:layout_marginTop="20dp" />
 
     <LinearLayout
         android:orientation="horizontal"

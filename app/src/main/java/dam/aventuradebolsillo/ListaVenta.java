@@ -5,12 +5,17 @@ public class ListaVenta {
     private int efecto;
     private String tipo;
     private int precio;
+    private int id;
 
-    public ListaVenta (String nombre, int efecto, String tipo, int precio) {
+    public ListaVenta (int id, String nombre, int efecto, String tipo, int precio) {
+        this.id = id;
         this.nombre = nombre;
         this.efecto = efecto;
         this.tipo = tipo;
         this.precio = precio;
+    }
+    public int get_id(){
+        return id;
     }
 
     public String get_nombre() {

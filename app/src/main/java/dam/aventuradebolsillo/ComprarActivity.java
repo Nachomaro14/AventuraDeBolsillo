@@ -90,7 +90,11 @@ public class ComprarActivity extends Activity{
                                             nombre = compra.get_nombre();
                                             efecto = compra.get_efecto();
                                             tipo = compra.get_tipo();
-                                            new Compra(ComprarActivity.this).execute();
+                                            if(precio <= oro){
+                                                new Compra(ComprarActivity.this).execute();
+                                            }else{
+                                                Toast.makeText(getBaseContext(), "No tienes suficiente oro", Toast.LENGTH_SHORT).show();
+                                            }
                                         } catch (SecurityException e) {
                                             Toast.makeText(getBaseContext(), "Error al realizar compra.", Toast.LENGTH_SHORT).show();
                                         }
